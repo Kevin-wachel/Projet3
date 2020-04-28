@@ -1,0 +1,18 @@
+@mixin menu_ {
+    height: $menu-height;
+    width: $menu-width;
+    box-shadow: $box-shadow-menu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+@mixin carte_menu_ {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 80px auto;
+    text-align: center;
+    $box-shadow-menu: 0 0 7px #dddddd;
+} 

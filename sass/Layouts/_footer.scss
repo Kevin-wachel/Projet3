@@ -1,0 +1,19 @@
+/* Partie Footer*/
+
+@media (max-width: 500px) {
+  footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-header-footer;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+  a {
+      margin: auto;
+      color: #fdcb46;
+      text-decoration: none;
+    }
+  }  
+}

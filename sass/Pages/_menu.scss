@@ -1,0 +1,107 @@
+/* Partie Menu La note enchantée */
+
+@media (max-width: 500px) {
+    .carte_menu_note {
+        @include carte_menu_;
+        background-color: $background-color-note;
+    }
+
+    ul {
+        list-style-type: none;
+        li {
+            padding-right: 40px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin: 25px auto 10px auto;
+    }
+
+    .note_titre {
+        display: flex;
+        margin: auto;
+        img {
+            margin-top: 12px;
+            padding-right: 10px;
+        }
+    }
+
+    .hr {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }  
+        
+    .hr::before,
+    .hr::after {
+            border-top: 2px solid;
+            content: "";
+            flex: 1;
+            margin: 0 25px;
+    }
+
+}
+
+/* Partie Menu Le chic a la française */
+
+@media (max-width: 500px) {
+    .carte_menu_chic {
+        @include carte_menu_;
+        background-color: $background-color-chic;
+    }
+
+    ul {
+        list-style-type: none;
+        li {
+            padding-right: 40px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin: 25px auto 10px auto;
+    }
+}
+
+/* Partie Menu Le délice des papilles */
+
+@media (max-width: 500px) {
+    .carte_menu_delice {
+        @include carte_menu_;
+        background-color: $background-color-delice;
+    }
+
+    ul {
+        list-style-type: none;
+        li {
+            padding-right: 40px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin: 25px auto 10px auto;
+    }
+}
+
+/* Partie Menu La palette du goût */
+
+@media (max-width: 500px) {
+    .carte_menu_palette {
+        @include carte_menu_;
+        background-color: $background-color-palette;
+    }
+
+    ul {
+        list-style-type: none;
+        li {
+            padding-right: 40px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin: 25px auto 10px auto;
+    }
+}

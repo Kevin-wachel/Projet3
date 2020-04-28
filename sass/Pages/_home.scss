@@ -1,0 +1,35 @@
+/* Partie Menu */
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      a {
+        text-decoration: none;
+        height: $menu-height;
+        width: $menu-width;
+        display: flex;
+        margin: 25px auto 25px auto;
+      }  
+    }
+    
+    .menu_note {
+        @include menu_; 
+        background-color: $background-color-note;
+    }
+    
+    .menu_chic {
+        @include menu_;
+        background-color: $background-color-chic;
+    }
+    
+    .menu_delice {
+        @include menu_;
+        background-color: $background-color-delice;
+    }
+    
+    .menu_palette {
+        @include menu_;
+        background-color: $background-color-palette;
+    }
+}
