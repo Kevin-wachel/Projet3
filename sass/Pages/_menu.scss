@@ -27,18 +27,18 @@
         }
     }
 
-    .hr {
+    .titre {
         display: flex;
         align-items: center;
         text-align: center;
     }  
         
-    .hr::before,
-    .hr::after {
-            border-top: 2px solid;
+    .titre::before,
+    .titre::after {
             content: "";
             flex: 1;
             margin: 0 25px;
+            border-top: $border-top-titre-note;
     }
 
 }
