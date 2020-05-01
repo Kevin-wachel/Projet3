@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* Import */
 /* Generale */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kurale&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
 body {
   height: 100%;
   margin: 0px;
@@ -11,6 +16,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 500px) {
@@ -27,6 +33,7 @@ body {
   .anim-menu:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+    opacity: 0.65;
   }
   .wiggle:hover {
     -webkit-animation: wiggle 200ms;
@@ -170,10 +177,10 @@ body {
     position: fixed;
     bottom: 0;
   }
-  footer .wiggle {
-    margin: auto;
-    color: #fdcb46;
+  footer a {
     text-decoration: none;
+    color: #fdcb46;
+    margin: auto;
   }
 }
 
@@ -218,6 +225,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #fcdfdb;
+    font-family: 'Devonshire', cursive;
   }
   .menu_chic {
     height: 450px;
@@ -238,6 +246,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #fff5fe;
+    font-family: 'Kurale', serif;
   }
   .menu_delice {
     height: 450px;
@@ -258,6 +267,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #eef0f0;
+    font-family: 'Dancing Script', cursive;
   }
   .menu_palette {
     height: 450px;
@@ -278,6 +288,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #fdfffd;
+    font-family: 'Kaushan Script', cursive;
   }
   /* Partie prochainement */
   .prochainement {
@@ -336,6 +347,7 @@ body {
     margin: 0px auto 80px auto;
     text-align: center;
     background-color: #fcdfdb;
+    font-family: 'Devonshire', cursive;
   }
   ul {
     list-style-type: none;
@@ -391,6 +403,7 @@ body {
     margin: 0px auto 80px auto;
     text-align: center;
     background-color: #fff5fe;
+    font-family: 'Kurale', serif;
   }
   ul {
     list-style-type: none;
@@ -401,6 +414,40 @@ body {
   h1 {
     text-align: center;
     margin: 25px auto 10px auto;
+  }
+  .titre_image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto 25px;
+  }
+  .titre_image h2 {
+    margin-bottom: 0px;
+  }
+  .trait {
+    width: 10%;
+    height: auto;
+  }
+  .rotateimg180 {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    width: 10%;
+    height: auto;
+  }
+  .appetit {
+    color: #cca152;
+  }
+  .papilles {
+    color: #8e6ceb;
+  }
+  .gourmandises {
+    color: #5b25f0;
   }
 }
 
@@ -418,6 +465,7 @@ body {
     margin: 0px auto 80px auto;
     text-align: center;
     background-color: #eef0f0;
+    font-family: 'Dancing Script', cursive;
   }
   ul {
     list-style-type: none;
@@ -428,6 +476,12 @@ body {
   h1 {
     text-align: center;
     margin: 25px auto 10px auto;
+  }
+  .rotateimg {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    width: 10%;
+    height: auto;
   }
 }
 
@@ -445,6 +499,7 @@ body {
     margin: 0px auto 80px auto;
     text-align: center;
     background-color: #fdfffd;
+    font-family: 'Kaushan Script', cursive;
   }
   ul {
     list-style-type: none;
@@ -456,5 +511,11 @@ body {
     text-align: center;
     margin: 25px auto 10px auto;
   }
+}
+
+/* Partie Mentions Légales */
+.container {
+  text-align: justify;
+  margin: auto 5px 80px 5px;
 }
 /*# sourceMappingURL=styles.css.map */

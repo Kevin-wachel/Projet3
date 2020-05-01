@@ -17,21 +17,25 @@
     .menu_note {
         @include menu_; 
         background-color: $background-color-note;
+        font-family: 'Devonshire', cursive;
     }
 
     .menu_chic {
         @include menu_;
         background-color: $background-color-chic;
+        font-family: 'Kurale', serif;
     }
     
     .menu_delice {
         @include menu_;
         background-color: $background-color-delice;
+        font-family: 'Dancing Script', cursive;
     }
     
     .menu_palette {
         @include menu_;
         background-color: $background-color-palette;
+        font-family: 'Kaushan Script', cursive;
     }
 
     /* Partie prochainement */

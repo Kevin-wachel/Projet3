@@ -4,6 +4,7 @@
     .carte_menu_note {
         @include carte_menu_;
         background-color: $background-color-note;
+        font-family: 'Devonshire', cursive;
     }
 
     ul {
@@ -35,10 +36,10 @@
         
     .titre::before,
     .titre::after {
-            content: "";
-            flex: 1;
-            margin: 0 25px;
-            border-top: $border-top-titre-note;
+        content: "";
+        flex: 1;
+        margin: 0 25px;
+        border-top: $border-top-titre-note;
     }
 
 }
@@ -49,6 +50,7 @@
     .carte_menu_chic {
         @include carte_menu_;
         background-color: $background-color-chic;
+        font-family: 'Kurale', serif;
     }
 
     ul {
@@ -61,6 +63,39 @@
     h1 {
         text-align: center;
         margin: 25px auto 10px auto;
+    }
+
+    .titre_image {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto 25px;
+        h2 {
+            margin-bottom: 0px;
+        }
+    }
+
+    .trait {
+        width: 10%;
+        height: auto;
+    }
+
+    .rotateimg180 {
+        transform: rotate(180deg);
+        width: 10%;
+        height: auto;
+    }
+
+    .appetit {
+        color: rgb(204, 161, 82);
+    }
+
+    .papilles {
+        color: rgb(142, 108, 235);
+    }
+
+    .gourmandises {
+        color: rgb(91, 37, 240);
     }
 }
 
@@ -70,6 +105,7 @@
     .carte_menu_delice {
         @include carte_menu_;
         background-color: $background-color-delice;
+        font-family: 'Dancing Script', cursive;
     }
 
     ul {
@@ -83,6 +119,12 @@
         text-align: center;
         margin: 25px auto 10px auto;
     }
+
+    .rotateimg {
+        transform: scaleX(-1);
+        width: 10%;
+        height: auto;
+    }
 }
 
 /* Partie Menu La palette du goût */
@@ -91,6 +133,7 @@
     .carte_menu_palette {
         @include carte_menu_;
         background-color: $background-color-palette;
+        font-family: 'Kaushan Script', cursive;
     }
 
     ul {
