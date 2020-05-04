@@ -1,150 +1,162 @@
 /* Partie Menu La note enchantée */
 
-@media (max-width: 500px) {
-    .carte_menu_note {
-        @include carte_menu_;
-        background-color: $background-color-note;
-        font-family: 'Devonshire', cursive;
-    }
+.carte_menu_note {
+    @include carte_menu_;
+    background-color: $background-color-note;
+    font-family: 'Devonshire', cursive;
+}
 
-    ul {
-        list-style-type: none;
-        li {
-            padding-right: 40px;
-        }
+ul {
+    list-style-type: none;
+    li {
+        padding-right: 40px;
     }
+}
 
-    h1 {
-        text-align: center;
-        margin: 25px auto 10px auto;
+h1 {
+    text-align: center;
+    margin: 25px auto 10px auto;
+}
+
+.note_titre {
+    display: flex;
+    margin: auto;
+    img {
+        margin-top: 12px;
+        padding-right: 10px;
     }
+}
 
-    .note_titre {
-        display: flex;
-        margin: auto;
-        img {
-            margin-top: 12px;
-            padding-right: 10px;
-        }
-    }
-
-    .titre {
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }  
-        
-    .titre::before,
-    .titre::after {
-        content: "";
-        flex: 1;
-        margin: 0 25px;
-        border-top: $border-top-titre-note;
-    }
-
+.titre {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}  
+    
+.titre::before,
+.titre::after {
+    content: "";
+    flex: 1;
+    margin: 0 25px;
+    border-top: $border-top-titre-note;
 }
 
 /* Partie Menu Le chic a la française */
 
-@media (max-width: 500px) {
-    .carte_menu_chic {
-        @include carte_menu_;
-        background-color: $background-color-chic;
-        font-family: 'Kurale', serif;
-    }
+.carte_menu_chic {
+    @include carte_menu_;
+    background-color: $background-color-chic;
+    font-family: 'Kurale', serif;
+}
 
-    ul {
-        list-style-type: none;
-        li {
-            padding-right: 40px;
-        }
+ul {
+    list-style-type: none;
+    li {
+        padding-right: 40px;
     }
+}
 
-    h1 {
-        text-align: center;
-        margin: 25px auto 10px auto;
-    }
+h1 {
+    text-align: center;
+    margin: 25px auto 10px auto;
+}
 
-    .titre_image {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: auto 25px;
-        h2 {
-            margin-bottom: 0px;
-        }
-    }
+.titre_h2_chic{
+    background: linear-gradient(to right, #d8852e 0%, #3e2290 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-    .trait {
-        width: 10%;
-        height: auto;
+.titre_image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 25px;
+    h2 {
+        margin-bottom: 0px;
     }
+}
 
-    .rotateimg180 {
-        transform: rotate(180deg);
-        width: 10%;
-        height: auto;
-    }
+.trait {
+    width: 10%;
+    height: auto;
+}
 
-    .appetit {
-        color: rgb(204, 161, 82);
-    }
+.rotateimg180 {
+    transform: rotate(180deg);
+    width: 10%;
+    height: auto;
+}
 
-    .papilles {
-        color: rgb(142, 108, 235);
-    }
+.appetit {
+    color: rgb(204, 161, 82);
+}
 
-    .gourmandises {
-        color: rgb(91, 37, 240);
-    }
+.papilles {
+    color: rgb(142, 108, 235);
+}
+
+.gourmandises {
+    color: rgb(91, 37, 240);
 }
 
 /* Partie Menu Le délice des papilles */
 
-@media (max-width: 500px) {
-    .carte_menu_delice {
-        @include carte_menu_;
-        background-color: $background-color-delice;
-        font-family: 'Dancing Script', cursive;
-    }
+.carte_menu_delice {
+    @include carte_menu_;
+    background-color: $background-color-delice;
+    font-family: 'Dancing Script', cursive;
+}
 
-    ul {
-        list-style-type: none;
-        li {
-            padding-right: 40px;
-        }
+ul {
+    list-style-type: none;
+    li {
+        padding-right: 40px;
     }
+}
 
-    h1 {
-        text-align: center;
-        margin: 25px auto 10px auto;
-    }
+h1 {
+    text-align: center;
+    margin: 25px auto 10px auto;
+}
 
-    .rotateimg {
-        transform: scaleX(-1);
-        width: 10%;
-        height: auto;
-    }
+.titre_h2_delice {
+    background: linear-gradient(to bottom right, #0431df, #0887fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rotateimg {
+    transform: scaleX(-1);
+    width: 10%;
+    height: auto;
 }
 
 /* Partie Menu La palette du goût */
 
-@media (max-width: 500px) {
-    .carte_menu_palette {
-        @include carte_menu_;
-        background-color: $background-color-palette;
-        font-family: 'Kaushan Script', cursive;
-    }
+.carte_menu_palette {
+    @include carte_menu_;
+    background-color: $background-color-palette;
+    font-family: 'Kaushan Script', cursive;
+}
 
-    ul {
-        list-style-type: none;
-        li {
-            padding-right: 40px;
-        }
+ul {
+    list-style-type: none;
+    li {
+        padding-right: 40px;
     }
+}
 
-    h1 {
-        text-align: center;
-        margin: 25px auto 10px auto;
-    }
+h1 {
+    text-align: center;
+    margin: 25px auto 10px auto;
+}
+
+.titre_h2_palette {
+    background: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
