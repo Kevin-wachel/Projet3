@@ -41,6 +41,38 @@ h1 {
     border-top: $border-top-titre-note;
 }
 
+@media (min-width: 700px) {
+    .titre::before,
+    .titre::after {
+        margin: 0 50px;   
+    }
+
+    .plats {
+        li {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul {
+            margin: auto 10px auto 10px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .titre::before,
+    .titre::after {
+        margin: 0 75px;   
+    }
+
+    .plats {
+        ul {
+            margin: auto 30px auto 30px;
+        }
+    }
+}
+
 /* Partie Menu Le chic a la française */
 
 .carte_menu_chic {
@@ -101,6 +133,26 @@ h1 {
     color: rgb(91, 37, 240);
 }
 
+@media (min-width: 700px) {
+    .trait {
+        width: 25%;
+    }
+
+    .rotateimg180 {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .trait {
+        width: 30%;
+    }
+
+    .rotateimg180 {
+        width: 30%;
+    }
+}
+
 /* Partie Menu Le délice des papilles */
 
 .carte_menu_delice {
@@ -132,6 +184,18 @@ h1 {
     transform: scaleX(-1);
     width: 10%;
     height: auto;
+}
+
+@media (min-width: 700px) {
+    .rotateimg {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .rotateimg {
+        width: 30%;
+    }
 }
 
 /* Partie Menu La palette du goût */

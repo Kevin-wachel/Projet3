@@ -15,4 +15,7 @@
     margin: 0px auto 80px auto;
     text-align: center;
     $box-shadow-menu: 0 0 7px #dddddd;
+    @media (min-width: 700px) {
+        width: 65%; 
+    }
 } 
