@@ -6,7 +6,7 @@
         <meta charset="UTF-8"/>
         <meta name="description" content="Ceci est la page menu du restaurants le chic à la fançaise du projet 3 d'Openclassrooms Ohmyfood"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="sass/styles.css"/>
         <title>Ohmyfood - Réservation de restaurants chics</title>
     </head>
 
@@ -14,7 +14,7 @@
         <!--En tête du site-->
         <header>
             <a href="index.html">
-                <h1>ohmyfood</h1>
+                <img src="image/logo.png" alt="logo de ohmyfood"/>
             </a>
         </header>
 
@@ -22,88 +22,96 @@
             <!--Nom du restaurant-->
             <h1>Le chic à la française</h1>
             <!--Logo et Nom-->
-            <section>
-                <h2>Le chic à la française</h2>
+            <section class="carte_menu_chic">
+                <div class="titre_h2_chic">
+                    <h2>Le chic à la française</h2>
+                </div>
+                <!--Pour se mettre en appétit-->
+                <div class="appetit">
+                    <!--Titre-->
+                    <section class="titre_image">
+                        <img src="image/trait_orange_chic.png" alt="trait orange" class="trait"/>
+                            <h2 class="underline">Pour se mettre en appétit</h2>
+                        <img src="image/trait_orange_chic.png" alt="trait orange" class="rotateimg180"/>
+                    </section>
+                    <!--Plats-->
+                    <div class="plats">
+                        <ul>
+                            <li>
+                                <p>Tartare de poulpe acidulé aux zests d'orange</p>
+                                <p>79€</p>
+                            </li>
+                            <li>
+                                <p>Velouté de légumes d'antan</p>
+                                <p>57€</p>
+                            </li>
+                            <li>
+                                <p>Soupe à l'oignon revisitée</p>
+                                <p>57€</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Plaisir des papilles-->
+                <div class="papilles">
+                    <!--Titre-->
+                    <section class="titre_image">
+                        <img src="image/trait_violet_chic.png" alt="trait violet" class="trait"/>
+                            <h2 class="underline">Plaisir des papilles</h2>
+                        <img src="image/trait_violet_chic.png" alt="trait violet" class="rotateimg180"/>
+                    </section>
+                    <!--Plats-->
+                    <div class="plats">
+                        <ul>
+                            <li>
+                                <p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
+                                <p>95€</p>
+                            </li>
+                            <li>
+                                <p>Magret de canard et parmentier de pommes de terres </p>
+                                <p>88€</p>
+                            </li>
+                            <li>
+                                <p>Pigeonneau d'Ille et Villaine sur son lit de gnocchis aux légumes</p>
+                                <p>175€</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Gourmandises sucrées-->
+                <div class="gourmandises">
+                    <!--Titre-->
+                    <section class="titre_image">
+                        <img src="image/trait_bleu_chic.png" alt="trait bleu" class="trait"/>
+                            <h2 class="underline">Gourmandises sucrées</h2>
+                        <img src="image/trait_bleu_chic.png" alt="trait bleu" class="rotateimg180"/>
+                    </section>
+                    <!--Plats-->
+                    <div class="plats">
+                        <ul>
+                            <li>
+                                <p>Pétales de violettes glacés et purée de noisettes</p>
+                            </li>
+                            <li>
+                                <p>Fondant aux chocolats revisité</p>
+                            </li>
+                            <li>
+                                <p>Millefeuille croustillant</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
             </section>
-            <!--Pour se mettre en appétit-->
-            <section>
-                <!--Titre-->
-                <div>
-                    <h2>Pour se mettre en appétit</h2>
-                </div>
-                <!--Plats-->
-                <div>
-                    <ul>
-                        <li>
-                            <p>Tartare de poulpe acidulé aux zests d'orange</p>
-                            <p>79€</p>
-                        </li>
-                        <li>
-                            <p>Velouté de légumes d'antan</p>
-                            <p>57€</p>
-                        </li>
-                        <li>
-                            <p>Soupe à l'oignon revisitée</p>
-                            <p>57€</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--Plaisir des papilles-->
-            <section>
-                <!--Titre-->
-                <div>
-                    <h2>Plaisir des papilles</h2>
-                </div>
-                <!--Plats-->
-                <div>
-                    <ul>
-                        <li>
-                            <p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
-                            <p>95€</p>
-                        </li>
-                        <li>
-                            <p>Magret de canard et parmentier de pommes de terres </p>
-                            <p>88€</p>
-                        </li>
-                        <li>
-                            <p>Pigeonneau d'Ille et Villaine sur son lit de gnocchis aux légumes</p>
-                            <p>175€</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--Gourmandises sucrées-->
-            <section>
-                <!--Titre-->
-                <div>
-                    <h2>Gourmandises sucrées</h2>
-                </div>
-                <!--Plats-->
-                <div>
-                    <ul>
-                        <li>
-                            <p>Pétales de violettes glacés et purée de noisettes</p>
-                        </li>
-                        <li>
-                            <p>Fondant aux chocolats revisité</p>
-                        </li>
-                        <li>
-                            <p>Millefeuille croustillant</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--Pied du site-->
-            <footer>
-                <a href="mentions.html">
-                    Mentions légales
-                </a>
-                <a>
-                    Contactez-nous
-                </a>
-            </footer>
         </main>
+        <!--Pied du site-->
+        <footer>
+            <a class="wiggle" href="mentions.html">
+                Mentions légales
+            </a>
+            <a class="wiggle">
+                Contactez-nous
+            </a>
+        </footer>
     </body>
 
 </html>

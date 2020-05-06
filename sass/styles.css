@@ -1,0 +1,762 @@
+@charset "UTF-8";
+/* Import */
+/* Generale */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kurale&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+body {
+  height: 100%;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 1.1em;
+  }
+}
+
+/* Partie Menu */
+.anim-menu {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.anim-menu:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.65;
+}
+
+.wiggle:hover {
+  -webkit-animation: wiggle 200ms;
+          animation: wiggle 200ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  25% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  50% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  75% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  100% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  25% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  50% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  75% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  100% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+}
+
+/* Effets souligner titre */
+.underline {
+  position: relative;
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: black;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.underline:hover:after {
+  width: 100%;
+  left: 0;
+  background: black;
+}
+
+/* Partie prochainement */
+.first {
+  -webkit-animation: 1s grow ease-out alternate infinite;
+          animation: 1s grow ease-out alternate infinite;
+}
+
+.second {
+  -webkit-animation: 1s grow ease-out alternate infinite;
+          animation: 1s grow ease-out alternate infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.third {
+  -webkit-animation: 1s grow ease-out alternate infinite;
+          animation: 1s grow ease-out alternate infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+/* Partie Header */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #579c87;
+  text-align: center;
+}
+
+img {
+  height: 50px;
+  margin-top: 25px;
+}
+
+/* Partie Footer*/
+footer {
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #579c87;
+  margin: 0px;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fdcb46;
+  margin: auto;
+}
+
+/* Partie Menu */
+.menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu a {
+  text-decoration: none;
+  height: 450px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .img_note {
+  width: 50px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px auto 0 auto;
+}
+
+.menu_note {
+  height: 450px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 7px #dddddd;
+          box-shadow: 0 0 7px #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fcdfdb;
+  font-family: 'Devonshire', cursive;
+  margin: 25px auto 25px auto;
+}
+
+.menu_note h2, .menu_note p {
+  color: black;
+}
+
+.menu_chic {
+  height: 450px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 7px #dddddd;
+          box-shadow: 0 0 7px #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff5fe;
+  font-family: 'Kurale', serif;
+  margin: 25px auto 25px auto;
+}
+
+.menu_chic h2, .menu_chic p {
+  background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#3e2290));
+  background: linear-gradient(to right, #d8852e 0%, #3e2290 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_delice {
+  height: 450px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 7px #dddddd;
+          box-shadow: 0 0 7px #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eef0f0;
+  font-family: 'Dancing Script', cursive;
+  margin: 25px auto 25px auto;
+}
+
+.menu_delice h2, .menu_delice p {
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  background: linear-gradient(to bottom right, #0431df, #0887fb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_palette {
+  height: 450px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 7px #dddddd;
+          box-shadow: 0 0 7px #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fdfffd;
+  font-family: 'Kaushan Script', cursive;
+  margin: 25px auto 25px auto;
+}
+
+.menu_palette h2, .menu_palette p {
+  background: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
+  background: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Partie prochainement */
+.prochainement {
+  width: 220px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #579c87;
+  color: #fdcb46;
+  margin: auto;
+  margin-bottom: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.anim_prochainement {
+  width: 5px;
+  height: 5px;
+  margin: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.anim_prochainement div {
+  width: 0;
+  height: 0;
+  background-color: #fdcb46;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 700px) {
+  .menu {
+    display: -ms-grid;
+    display: grid;
+    margin: auto 50px auto 50px;
+  }
+  .menu_note {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .menu_chic {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .menu_delice {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .menu_palette {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .prochainement {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    display: -ms-grid;
+    display: grid;
+    margin: auto 100px auto 100px;
+  }
+}
+
+/* Partie Menu La note enchantée */
+.carte_menu_note {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px auto 80px auto;
+  text-align: center;
+  background-color: #fcdfdb;
+  font-family: 'Devonshire', cursive;
+}
+
+@media (min-width: 700px) {
+  .carte_menu_note {
+    width: 65%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-right: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px auto 10px auto;
+}
+
+.note_titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.note_titre img {
+  margin-top: 12px;
+  padding-right: 10px;
+}
+
+.titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.titre::before,
+.titre::after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 25px;
+  border-top: 2px solid black;
+}
+
+@media (min-width: 700px) {
+  .titre::before,
+  .titre::after {
+    margin: 0 50px;
+  }
+  .plats li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .plats ul {
+    margin: auto 10px auto 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titre::before,
+  .titre::after {
+    margin: 0 75px;
+  }
+  .plats ul {
+    margin: auto 30px auto 30px;
+  }
+}
+
+/* Partie Menu Le chic a la française */
+.carte_menu_chic {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px auto 80px auto;
+  text-align: center;
+  background-color: #fff5fe;
+  font-family: 'Kurale', serif;
+}
+
+@media (min-width: 700px) {
+  .carte_menu_chic {
+    width: 65%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-right: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px auto 10px auto;
+}
+
+.titre_h2_chic {
+  background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#3e2290));
+  background: linear-gradient(to right, #d8852e 0%, #3e2290 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titre_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto 25px;
+}
+
+.titre_image h2 {
+  margin-bottom: 0px;
+}
+
+.trait {
+  width: 10%;
+  height: auto;
+}
+
+.rotateimg180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 10%;
+  height: auto;
+}
+
+.appetit {
+  color: #cca152;
+}
+
+.papilles {
+  color: #8e6ceb;
+}
+
+.gourmandises {
+  color: #5b25f0;
+}
+
+@media (min-width: 700px) {
+  .trait {
+    width: 25%;
+  }
+  .rotateimg180 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .trait {
+    width: 30%;
+  }
+  .rotateimg180 {
+    width: 30%;
+  }
+}
+
+/* Partie Menu Le délice des papilles */
+.carte_menu_delice {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px auto 80px auto;
+  text-align: center;
+  background-color: #eef0f0;
+  font-family: 'Dancing Script', cursive;
+}
+
+@media (min-width: 700px) {
+  .carte_menu_delice {
+    width: 65%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-right: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px auto 10px auto;
+}
+
+.titre_h2_delice {
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  background: linear-gradient(to bottom right, #0431df, #0887fb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rotateimg {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 10%;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  .rotateimg {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .rotateimg {
+    width: 30%;
+  }
+}
+
+/* Partie Menu La palette du goût */
+.carte_menu_palette {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px auto 80px auto;
+  text-align: center;
+  background-color: #fdfffd;
+  font-family: 'Kaushan Script', cursive;
+}
+
+@media (min-width: 700px) {
+  .carte_menu_palette {
+    width: 65%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-right: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px auto 10px auto;
+}
+
+.titre_h2_palette {
+  background: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
+  background: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Partie Mentions Légales */
+.container {
+  text-align: justify;
+  margin: auto 5px 80px 5px;
+}
+
+@media (min-width: 700px) {
+  .container {
+    margin: auto 50px 80px 50px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

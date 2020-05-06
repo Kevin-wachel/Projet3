@@ -6,7 +6,7 @@
         <meta charset="UTF-8"/>
         <meta name="description" content="Ceci est la page menu du restaurants le délice des papilles du projet 3 d'Openclassrooms Ohmyfood"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="sass/styles.css"/>
         <title>Ohmyfood - Réservation de restaurants chics</title>
     </head>
 
@@ -14,7 +14,7 @@
         <!--En tête du site-->
         <header>
             <a href="index.html">
-                <h1>ohmyfood</h1>
+                <img src="image/logo.png" alt="logo de ohmyfood"/>
             </a>
         </header>
 
@@ -22,91 +22,99 @@
             <!--Nom du restaurant-->
             <h1>Le délice des papilles</h1>
             <!--Logo et Nom-->
-            <section>
-                <h2>Le délice des papilles</h2>
+            <section class="carte_menu_delice">
+                <div class="titre_h2_delice">
+                    <h2>Le délice des papilles</h2>
+                </div>
+                <!--Pour bien commencer-->
+                <div class="commencer">
+                    <!--Titre-->
+                    <section class="titre_image">
+                        <img src="image/trait_bleu1_delice.png" alt="Trait bleu" class="trait"/>
+                            <h2 class="underline">Pour bien commencer</h2>
+                        <img src="image/trait_bleu1_delice.png" alt="Trait bleu" class="rotateimg"/>
+                    </section>
+                    <!--Plats-->
+                    <div class="plats">
+                        <ul>
+                            <li>
+                                <p>Tartare de thon assaisonné au yuzu</p>
+                                <p>55€</p>
+                            </li>
+                            <li>
+                                <p>Bouchée de homard croustillant et sa farandole de petits légumes</p>
+                                <p>89€</p>
+                            </li>
+                            <li>
+                                <p>Velouté de cèpes aux truffes</p>
+                                <p>56€</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Pour bien continuer-->
+                <div class="continuer">
+                    <!--Titre-->
+                    <section class="titre_image">
+                        <img src="image/trait_bleu2_delice.png" alt="Trait bleu" class="trait"/>
+                            <h2 class="underline">Pur bien continuer</h2>
+                        <img src="image/trait_bleu2_delice.png" alt="Trait bleu" class="rotateimg"/>
+                    </section>
+                    <!--Plats-->
+                    <div class="plats">
+                        <ul>
+                            <li>
+                                <p>Poulet rôti aux herbes de provence et sa crème de truffe</p>
+                                <p>110€</p>
+                            </li>
+                            <li>
+                                <p>Langouste rôtie et ses légumes de saison</p>
+                                <p>225€</p>
+                            </li>
+                            <li>
+                                <p>Côte de boeuf angus et sa purée de panais</p>
+                                <p>115€</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Pour bien terminer-->
+                <div  class="terminer">
+                    <!--Titre-->
+                    <section class="titre_image">
+                        <img src="image/trait_bleu3_delice.png" alt="Trait bleu" class="trait"/>
+                            <h2 class="underline">Pour bien terminer</h2>
+                        <img src="image/trait_bleu3_delice.png" alt="Trait bleu" class="rotateimg"/>
+                    </section>
+                    <!--Plats-->
+                    <div class="plats">
+                        <ul>
+                            <li>
+                                <p>Farandole de déssert du chef</p>
+                                <p>55€</p>
+                            </li>
+                            <li>
+                                <p>Crème brulée revisitée</p>
+                                <p>60€</p>
+                            </li>
+                            <li>
+                                <p>Tiramisu à la noisette</p>
+                                <p>55€</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-            <!--Pour bien commencer-->
-            <section>
-                <!--Titre-->
-                <div>
-                    <h2>Pour bien commencer</h2>
-                </div>
-                <!--Plats-->
-                <div>
-                    <ul>
-                        <li>
-                            <p>Tartare de thon assaisonné au yuzu</p>
-                            <p>55€</p>
-                        </li>
-                        <li>
-                            <p>Bouchée de homard croustillant et sa farandole de petits légumes</p>
-                            <p>89€</p>
-                        </li>
-                        <li>
-                            <p>Velouté de cèpes aux truffes</p>
-                            <p>56€</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--Pour bien continuer-->
-            <section>
-                <!--Titre-->
-                <div>
-                    <h2>Pur bien continuer</h2>
-                </div>
-                <!--Plats-->
-                <div>
-                    <ul>
-                        <li>
-                            <p>Poulet rôti aux herbes de provence et sa crème de truffe</p>
-                            <p>110€</p>
-                        </li>
-                        <li>
-                            <p>Langouste rôtie et ses légumes de saison</p>
-                            <p>225€</p>
-                        </li>
-                        <li>
-                            <p>Côte de boeuf angus et sa purée de panais</p>
-                            <p>115€</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--Pour bien terminer-->
-            <section>
-                <!--Titre-->
-                <div>
-                    <h2>Pour bien terminer</h2>
-                </div>
-                <!--Plats-->
-                <div>
-                    <ul>
-                        <li>
-                            <p>Farandole de déssert du chef</p>
-                            <p>55€</p>
-                        </li>
-                        <li>
-                            <p>Crème brulée revisitée</p>
-                            <p>60€</p>
-                        </li>
-                        <li>
-                            <p>Tiramisu à la noisette</p>
-                            <p>55€</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--Pied du site-->
-            <footer>
-                <a href="mentions.html">
-                    Mentions légales
-                </a>
-                <a>
-                    Contactez-nous
-                </a>
-            </footer>
         </main>
+        <!--Pied du site-->
+        <footer>
+            <a class="wiggle" href="mentions.html">
+                Mentions légales
+            </a>
+            <a class="wiggle">
+                Contactez-nous
+            </a>
+        </footer>
     </body>
 
 </html>
