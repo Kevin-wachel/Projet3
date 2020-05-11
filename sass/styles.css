@@ -523,7 +523,7 @@ h2 {
   .titre::after {
     margin: 0 50px;
   }
-  .plats li {
+  .plats ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,9 +537,6 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .plats ul {
-    margin: auto 10px auto 10px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -548,7 +545,7 @@ h2 {
     margin: 0 75px;
   }
   .plats ul {
-    margin: auto 30px auto 30px;
+    margin: 20px 30px 20px 30px;
   }
 }
 
