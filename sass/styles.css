@@ -169,9 +169,12 @@ header {
   text-align: center;
 }
 
-img {
-  height: 50px;
-  margin-top: 25px;
+.titre_logo {
+  color: #fdcb46;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Partie Footer*/
@@ -256,7 +259,7 @@ footer a {
   margin: 25px auto 25px auto;
 }
 
-.menu_note h2, .menu_note p {
+.menu_note h2, .menu_note h3 {
   color: black;
 }
 
@@ -283,7 +286,7 @@ footer a {
   margin: 25px auto 25px auto;
 }
 
-.menu_chic h2, .menu_chic p {
+.menu_chic h2, .menu_chic h3 {
   background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#3e2290));
   background: linear-gradient(to right, #d8852e 0%, #3e2290 100%);
   background-clip: text;
@@ -314,7 +317,7 @@ footer a {
   margin: 25px auto 25px auto;
 }
 
-.menu_delice h2, .menu_delice p {
+.menu_delice h2, .menu_delice h3 {
   background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   background: linear-gradient(to bottom right, #0431df, #0887fb);
   background-clip: text;
@@ -345,7 +348,7 @@ footer a {
   margin: 25px auto 25px auto;
 }
 
-.menu_palette h2, .menu_palette p {
+.menu_palette h2, .menu_palette h3 {
   background: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
   background: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
   background-clip: text;
@@ -462,6 +465,12 @@ footer a {
   }
 }
 
+.carte_menu_note img {
+  height: 50px;
+  width: auto;
+  margin-top: 20px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -470,7 +479,7 @@ ul li {
   padding-right: 40px;
 }
 
-h1 {
+h2 {
   text-align: center;
   margin: 25px auto 10px auto;
 }
@@ -485,6 +494,8 @@ h1 {
 .note_titre img {
   margin-top: 12px;
   padding-right: 10px;
+  height: 50px;
+  width: auto;
 }
 
 .titre {
@@ -595,10 +606,6 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto 25px;
-}
-
-.titre_image h2 {
-  margin-bottom: 0px;
 }
 
 .trait {
